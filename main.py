@@ -1,5 +1,9 @@
+import addressScript
 import clientScript
 import doctorScript
+import internalLoginScript
+import serviceScript
+import visitsScript
 
 # import unidecode
 
@@ -22,15 +26,31 @@ femaleSurnames = ["Nováková", "Svobodová", "Novotná", "Dvořáková", "Čern
                   "Pospíšilová", "Hájková", "Králová", "Jelínková", "Růžičková",
                   "Benešová", "Fialová", "Sedláčková"]
 
-mailboxes = ["gmail.com", "protonmail.com", "seznam.cz", ]
+mailboxes = ["gmail.com", "protonmail.com", "seznam.cz"]
+
+someWords = "Lorem ipsum dolor sit amet consectetur adipiscing elit Etiam fringilla dolor sit amet tincidunt aliquet nunc nunc laoreet ipsum id commodo enim est ac antet"
+
+someWords = someWords.split(" ")
 
 names = [maleNames, femaleNames]
 surnames = [maleSurnames, femaleSurnames]
 
-usedIds = []
-usedEmails = []
 
-doctorScript.doctorScriptCreator(10, names, surnames)
+
+addressScript.clients_addresses()
+print("\n")
+
+emailsList = doctorScript.doctorScriptCreator(10, names, surnames)
+print("\n")
+
+internalLoginScript.internalLoginScriptCreator(emailsList)
 print("\n")
 
 clientScript.clientScriptCreator(10, names, surnames)
+print("\n")
+
+visitsScript.visitScriptCreator("medcenter_database", 40, 10, 10, 10)
+print("\n")
+
+serviceScript.serviceScriptCreator("medcenter_database", 10, 7, someWords)
+
