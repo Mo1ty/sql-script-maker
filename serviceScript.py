@@ -5,7 +5,7 @@ def serviceScriptCreator(dbName, size, maxServiceTypeId, someWords):
 
     usedServiceNames = []
 
-    print(f"INSERT INTO `{dbName}`.`services` VALUES")
+    print(f"INSERT INTO `{dbName}`.`treatments` VALUES")
 
     for serviceId in range(1, size+1):
 
@@ -14,5 +14,5 @@ def serviceScriptCreator(dbName, size, maxServiceTypeId, someWords):
             serviceName = someWords[random.randint(0, len(someWords) - 1)]
 
         print(f"({serviceId}, {random.randint(1, maxServiceTypeId)}, \"{serviceName}\","
-              f" {random.randint(200, 800) // 100}, {random.randint(1, 9)}),")
+              f" {random.randint(200, 800) // 100}),")
         usedServiceNames.append(serviceName)

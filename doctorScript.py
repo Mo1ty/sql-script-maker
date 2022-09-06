@@ -24,11 +24,9 @@ def doctorScriptCreator(size: int, names, surnames):
         email = unidecode.unidecode(f"{firstName}.{lastName}@email.cz")
 
         addressId = random.randint(1, 7)
-        serviceTypeId = random.randint(1, 7)
-        qualificationLevel = random.randint(4, 10)
 
         print(f"({doctorId}, \"{firstName}\", \"{lastName}\", \"{email}\", "
-              f"{addressId}, {serviceTypeId}, {qualificationLevel}),")
+              f"{addressId}),")
 
         usedNameSurnameCombos.append(firstName + lastName)
         emailsList.append(email)

@@ -1,3 +1,4 @@
+import TreatmentDoctorJoin
 import addressScript
 import clientScript
 import doctorScript
@@ -53,4 +54,7 @@ visitsScript.visitScriptCreator("medcenter_database", 40, 10, 10, 10)
 print("\n")
 
 serviceScript.serviceScriptCreator("medcenter_database", 10, 7, someWords)
+print("\n")
+
+TreatmentDoctorJoin.joinScriptCreator(10, 10, 50)
 

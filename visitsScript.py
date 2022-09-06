@@ -10,7 +10,7 @@ def visitScriptCreator(dbName, size, maxClientId, maxServiceId, maxDoctorId):
         clientId = random.randint(1, maxClientId)
         doctorId = random.randint(1, maxDoctorId)
 
-        data = datetime.date(2022, random.randint(4, 8), random.randint(1, 30))
+        data = datetime.date(2022, random.randint(10, 12), random.randint(1, 30))
         time = datetime.time(random.randint(6, 18), 0)
 
-        print(f"({visitId}, {serviceId}, {clientId}, {doctorId}, \"{data}\", \"{time}\"),")
+        print(f"(DEFAULT, {serviceId}, {clientId}, {doctorId}, \"{data} {time}\"),")
