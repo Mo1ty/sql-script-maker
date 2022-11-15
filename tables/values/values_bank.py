@@ -38,6 +38,8 @@ treatments = ["Colostomy", "Proctectomy", "Colon Cancer Treatment", "Colectomy",
               "Vertebroplasty", "Minimally Invasive Spine Surgery", "Pacemaker Insertion",
               "Implantable Cardioverter Defibrillator ICD Insertion"]
 
+treatments_types = ["Surgery", "Pediatry", "Dentistry"]
+
 someWords = "Lorem ipsum dolor sit amet consectetur " \
             "adipiscing elit Etiam fringilla dolor sit amet " \
             "tincidunt aliquet nunc nunc laoreet ipsum id " \
