@@ -32,18 +32,6 @@ INSERT INTO `alternative-db`.`treatments` VALUES
 (4, 2, "Open Appendectomy", 800, 2),
 (5, 2, "Kyphoplasty", 600, 9);
 
-INSERT INTO `alternative-db`.`contact` VALUES
-(1, "Lenka", "Kučerová", "+420 235 124 314", 1),
-(2, "Ondřej", "Veselý", "+420 324 234 321", 2),
-(3, "Svetlana", "Králová", "+420 987 887 342", 3),
-(4, "Marek", "Němec", "+420 324 433 123", 4),
-(5, "Marie", "Dvořáková", "+420 987 582 294", 5),
-(6, "Michal", "Marek", "+420 023 823 231", 6),
-(7, "Ekaterina", "Pokorná", "+420 432 123 342", 7),
-(8, "Ladislav", "Novotný", "+420 234 234 246", 8),
-(9, "Lucie", "Sedláčková", "+420 986 545 234", 9),
-(10, "David", "Jelínek", "+420 123 097 265", 10);
-
 INSERT INTO `alternative-db`.`login_data` VALUES
 ("1", "czteiiqpqf@email.com", "{bcrypt}$2a$10$0YnP.OvKmDCTi2TtsWAcNun9WEQDw7a9Ddt9L3KzLPEgd47oSsw4i", "ROLE_CLIENT", NULL),
 ("2", "wnffmuvgvx@email.com", "{bcrypt}$2a$10$0YnP.OvKmDCTi2TtsWAcNun9WEQDw7a9Ddt9L3KzLPEgd47oSsw4i", "ROLE_CLIENT", NULL),
@@ -55,6 +43,20 @@ INSERT INTO `alternative-db`.`login_data` VALUES
 ("8", "pasfvfjuep@email.com", "{bcrypt}$2a$10$0YnP.OvKmDCTi2TtsWAcNun9WEQDw7a9Ddt9L3KzLPEgd47oSsw4i", "ROLE_CLIENT", NULL),
 ("9", "snivazsyro@email.com", "{bcrypt}$2a$10$0YnP.OvKmDCTi2TtsWAcNun9WEQDw7a9Ddt9L3KzLPEgd47oSsw4i", "ROLE_DOCTOR", NULL),
 ("10", "jonnqzgtiz@email.com", "{bcrypt}$2a$10$0YnP.OvKmDCTi2TtsWAcNun9WEQDw7a9Ddt9L3KzLPEgd47oSsw4i", "ROLE_DOCTOR", NULL);
+
+INSERT INTO `alternative-db`.`contact` VALUES
+(1, 1, "Lenka", "Kučerová", "+420 235 124 314", 1),
+(2, 2, "Ondřej", "Veselý", "+420 324 234 321", 2),
+(3, 3, "Svetlana", "Králová", "+420 987 887 342", 3),
+(4, 4, "Marek", "Němec", "+420 324 433 123", 4),
+(5, 5, "Marie", "Dvořáková", "+420 987 582 294", 5),
+(6, 6, "Michal", "Marek", "+420 023 823 231", 6),
+(7, 7, "Ekaterina", "Pokorná", "+420 432 123 342", 7),
+(8, 8, "Ladislav", "Novotný", "+420 234 234 246", 8),
+(9, 9, "Lucie", "Sedláčková", "+420 986 545 234", 9),
+(10, 10, "David", "Jelínek", "+420 123 097 265", 10);
+
+
 
 INSERT INTO `alternative-db`.`clients` VALUES
 (1, 1, 900, 1),
